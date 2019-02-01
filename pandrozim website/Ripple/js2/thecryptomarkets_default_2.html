@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>thecryptomarkets.eu</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<!--favicon Images Start-->
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="manifest" href="images/manifest.json" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+<!--favicon Images End-->
+<link href="css/style_en.css" rel="stylesheet" type="text/css" />
+<link href="css/trade_en.css" rel="stylesheet" type="text/css" />
+<link href="css/nav.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css" media="screen" />
+<script id="twitter-wjs" src="js/widgets.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jqhelper.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.noty.mini.js"></script>
+<!--[if IE]>
+    <script src="/js/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
+</style>
+<script>
+    (function() {
+        if (!  
+            /*@cc_on!@*/  
+            0) return;  
+            document.createElement("template");  
+    })();
+</script>
+<script type="text/javascript" charset="utf-8" async="" src="js/timeline.a75a38b7960939a49c5cb210fbed2da2.js"></script>
+<script type="text/javascript" src="js/js_popup/jquery-popup.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    $('.dropdown').mouseenter(function(){
+        $('.sublinks').stop(false, true).hide();
+        var submenu = $(this).parent().next();
+        submenu.css({
+            position:'absolute',
+            top: $(this).offset().top + $(this).height() + 'px',
+            left: $(this).offset().left + 'px',
+            zIndex:1000
+        });
+
+        submenu.stop().slideDown(300);
+        submenu.mouseleave(function(){
+            $(this).slideUp(300);
+        });
+    });
+});
+</script>
+<!----------------------------Modal Window --------------------------->
+<!--auto popup start-->
+<style type="text/css">
+/* popup_box DIV-Styles*/
+#popup_box { 
+	display:none; /* Hide the DIV */
+	position:fixed;  
+	 /* hack for internet explorer 6 */  
+	background:#000;  
+	left: 190px;
+	top: 28px;
+	z-index:999999; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+	margin-left: 15px;  
+	
+	/* additional features, can be omitted */
+	padding:15px;  
+	font-size:15px;  
+}
+
+#container {
+z-index:100;}
+
+a{  
+cursor: pointer;  
+text-decoration:none;  
+} 
+
+/* This is for the positioning of the Close Link */
+#popupBoxClose {
+	font-size:20px;
+	line-height:15px;
+	right:5px;
+	top:5px;
+	position:absolute;
+	color:#6fa5e2;
+	font-weight:500;
+	display: block;
+	background-image: url(images/button_delete_blue.png);
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 48px;
+}
+
+.popup_cont {
+	background-color: #000;
+	 height:580px;
+	width: 895px;
+}
+</style>
+
+<script type="text/javascript">
+	
+	$(document).ready( function() {
+	
+		// When site loaded, load the Popupbox First
+		loadPopupBox();
+	
+		$('#popupBoxClose').click( function() {			
+			unloadPopupBox();
+		});
+		
+		$('#container').click( function() {
+			unloadPopupBox();
+		});
+
+		function unloadPopupBox() {	// TO Unload the Popupbox
+			$('#popup_box').fadeOut("slow");
+			$("#container").css({ // this is just for style		
+				"opacity": "1"  
+			}); 
+		}	
+		
+		function loadPopupBox() {	// To Load the Popupbox
+			$('#popup_box').fadeIn("slow");
+			$("#container").css({ // this is just for style
+				"opacity": "0.1"  
+			}); 		
+		}
+		/**********************************************************/
+		
+	});
+</script>
+<!--auto popup end-->
+<link href="css/indexzoom.css" rel="stylesheet" type="text/css">
+<style>
+    .votelist tr{cursor:pointer;}.votelist tr:hover{background-color:#ECFFB3;}
+    /*.myButton{padding:6px 8px;}*/
+</style>
+</head>
+<body>
+<div class="s1"></div>
+<div class="header">
+  <div class="top_up">
+      <table  style="width:800px;margin-left:-150px;" >
+          <tr>
+              <td><ul class="topprice"> 
+                      <li style="padding-left:10px;"> <span> 
+                              <marquee behavior="left" align="left" scrollamount="3" width="1250px" class="topprice" style="overflow:hidden;">
+                                  <strong><font color="#ffffff"><font size="4">WELCOME TO thecryptomarkets.eu, The Premiere Bitcoin and Crypto Currency Trading Platform. Our Unique Team Of Analysts Generate Genuine Revenue.Using The Best Trading Terms. Registration Going to Start (Prelaunch Announced), Lets Change The World.</font></font></strong>
+                              </marquee>
+                          </span> </li>
+
+                  </ul></td>
+              <td style="color:#FFFFFF;"><div id="google_translate_element"></div><script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+                  </script><script type="text/javascript" src="//translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+              </td>
+          </tr>
+      </table>
+  </div>
+    
+  <table width="100%" style="background:#FFFFFF;" >
+  <tr>
+    <td>  <div class="logo"> <a href="index.php" title="Home"><img src="images/logo_en.png"></a> <span style="color:#000; margin-left:-240px; margin-top:63px;"></span> </div></td>
+    <td>
+	<table width="230"  >
+  <tr>
+      <td><a href="soft/member/register.php" target="_blank" title="Home" class="myButton">Register</a></td>
+    <td><a href="soft/member/" title="Home" target="_blank"  class="myButton2">Login</a></td>
+  </tr>
+</table>
+	 </td>
+	<td> <br />
+</td>
+  </tr>
+</table>
+
+    <div class="nav">
+        <ul id="mobanwang_com" class="first-menu">
+            <li id="active"><a href="index.php" target="_self">Home</a> </li>
+            <li class="nav_acc"> <a href="about.php" target="_self">About Us</a> </li>
+            <li><a href="opportunity.php" class="mobanwang" style="min-width:220px;"><font color="#f40">Business Opportunity</font></a> </li>
+            <li><a href="team.php" class="mobanwang" style="min-width:220px;">Management Team</a> </li>
+            <li><a href="gallery.php" class="mobanwang" style="width:180px;">Gallery</a></li>
+            <li><a href="security.php" class="mobanwang" style="min-width:140px;">Project</a> </li>
+                                    <li><a href="contact.php" class="mobanwang" style="width:150px;"><font color="#f40">Contact Us</font></a> </li>
+            <li><a href="ppt.pptx" class="mobanwang" style="width:150px;">Download</a> </li>
+
+        </ul>
+        <div class="navcircle"></div>
+    </div>
+</div><div class="content">
+    <script type="text/javascript" src="js/jquery.jslides.js"></script>
+    <div id="full-screen-slider">
+        <div class="login_box" >
+            <img src="images/slider_gif.gif" style="border:solid 2px #000;"/>
+        </div>
+        <ul id="slides">
+            <li style="background:url(images/p18_en.png) 50% 0% no-repeat;"><a href="#"></a></li>
+            <li style="display: none; background: url(images/p14_en.png) 50% 0% no-repeat;"><a href="#"></a></li>
+            <li style="display: none; background: url(images/p5_en.png) 50% 0% no-repeat;"><a href="#"></a></li>
+        </ul>
+        <ul id="pagination" style="margin-left: -25px;">
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+    <div   style=" background:#3e4957; ">
+        <table>
+            <tr>
+                <td><img src="images/divider-flag.png"></td>
+                <td><img src="images/flag-01.png"></td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-02.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-03.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-04.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-05.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-06.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-07.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-08.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-09.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-10.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-11.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-15.png"> </td>
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-13.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-14.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-12.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-16.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+                <td> <img src="images/flag-17.png"> </td> 
+                <td><img src="images/divider-flag.png"></td>
+            </tr>
+            </ul>  
+        </table>
+    </div>
+
+    <div   style=" background:#fff; "><br />
+
+        <table>
+            <tr>
+                <td align="center"><h4><a href="#">Click To Download App</a></h4></td>
+                <td align="center"><h4><a href="https://www.facebook.com/HEXA-Crypto-236516636809250/">Like Our Facebook Page</a></h4></td>
+                <td align="center"><h4><a href="https://www.youtube.com/watch?v=w3x2CRjMPJo&t=11s">Watch Us On YouTube</a></h4></td>  
+
+            </tr>
+            <tr>
+                <td><a href="#"><img src="images/index-icon-01.gif" height="151"></a></td>
+                <td><a href="https://www.facebook.com/HEXA-Crypto-236516636809250/"><img src="images/index-icon-02.gif" height="151"></a></td>
+                <td><a href="https://www.youtube.com/watch?v=w3x2CRjMPJo&t=11s"><img src="images/index-icon-03.gif" height="151"></a></td>
+
+            </tr>
+            </ul>  
+        </table>
+    </div>
+
+    <iframe src="chart.html" style="width:100%;height:1000px;" scrolling="no" style="overflow:visible;"></iframe>
+
+    <div class="left_con">
+        <div id="marketlist_wrapper" class="dataTables_wrapper" role="grid">
+            <div id="marketlist_wrapper" class="dataTables_wrapper no-footer">
+
+                <div align="center"><iframe width="1000" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://myip.ms/crypto.php?m=7777&amp;m2=3&amp;m3=179&amp;m4=155&amp;l=1&amp;y=1&amp;w=1000&amp;t=usd"></iframe><a href="https://myip.ms/"></a></div>
+
+
+                <div align="center" style="height:480px;">
+
+                    <table width="90%" style="border:solid #eee 1px; ">
+                        <tr>
+                            <td width="30%"><img src="images/coins.png"></td>
+                            <td width="70%"><div style="margin:5px 0px 5px 0px;"> 
+
+                                    <p> <h3>What is thecryptomarkets.eu?</h3>
+                                    <p>thecryptomarkets.eu is an online currency convertible into crypto currencies, it is an online wallet and easy payment gateway to send and receive various popular digital coins common in the internet. In a word, its a comprehensive solution for using the most popular digital coins.&nbsp;<strong>Currently, thecryptomarkets.eu supports Bitcoin, Litecoin, Dogecoin, Peercoin, and Darkcoin.</strong></p>
+                                    </p>
+
+                                </div></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" colspan="2"><img src="images/service_title.png"></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" colspan="2">
+                                <table width="100%"  >
+                                    <tr>
+                                        <td width="7%"><img src="images/service-icon-01.png"></td>
+                                        <td width="43%"><div style="margin:5px 0px 5px 0px;"> 
+
+                                                <p> <h3>Accept Crypto Coins</h3>
+                                                <p>Through a payment gateway, you can accept all common coins on your website and thus minimize all development and management costs.</strong></p>
+                                                </p>
+
+                                            </div></td>
+                                        <td width="7%"><img src="images/service-icon-02.png"></td>
+                                        <td width="43%"><div style="margin:5px 0px 5px 0px;"> 
+
+                                                <p> <h3>Micro Payments</h3>
+                                                <p>Due to the growing rate of Bitcoin, sending amounts less than the network fee is not wise. Micro payments become useful because there are no fees for sending crypto currencies in thecryptomarkets.eu</strong></p>
+                                                </p>
+
+                                            </div></td>
+
+                                    </tr><tr>
+
+                                        <td  ><img src="images/service-icon-03.png"></td>
+                                        <td  ><div style="margin:5px 0px 5px 0px;"> 
+
+                                                <p> <h3>Mass Payment</h3>
+                                                <p>Through thecryptomarkets.eu API, you can pay hundreds of recipients automatically from your software or website.
+                                                    No Exchange Risk</strong></p>
+                                                </p>
+
+                                            </div></td>
+                                        <td  ><img src="images/service-icon-04.png"></td>
+                                        <td ><div style="margin:5px 0px 5px 0px;"> 
+
+                                                <p> <h3>No Fees</h3>
+                                                <p>there are no fees regarding crypto currencies, and only 0.5% fee is charged for local currency transfers.</strong></p>
+                                                </p>
+
+                                            </div></td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td  ><img src="images/service-icon-05.png"></td>
+                                        <td  ><div style="margin:5px 0px 5px 0px;"> 
+
+                                                <p> <h3>No Exchange Risk</h3>
+                                                <p>protect your money from high fluctuations of crypto currencies by converting coins to local currencies and vice versa</strong></p>
+                                                </p>
+
+                                            </div></td>
+                                        <td  ><img src="images/service-icon-06.png"></td>
+                                        <td ><div style="margin:5px 0px 5px 0px;"> 
+
+                                                <p> <h3>Highest Security</h3>
+                                                <p>Due to Pincode structure and 2-step authentication, no malware may steal your account information..</strong></p>
+                                                </p>
+
+                                            </div></td>
+
+                                    </tr>
+
+                                </table></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <br /> <br /> <br /> <br /> <br />
+
+            </div>
+        </div>
+    </div>
+    <div class="right_con">
+        <div class="right_title"> <span><img src="images/right_tl_disc.gif"></span> <a href="index.php#">Crypto Live Traffic <b></b></a> </div>
+        <!--<div class="right_content adv">-->
+        <div class="right_content adv" style="background:transparent; border:none; min-height:450px;">
+            
+        </div>
+        <div class="right_content adv">
+            <ul class="tese">
+                <li style="border-right:1px solid #ddd; border-bottom:1px solid #ddd; height:159px">
+                    <dl>
+                        <dt><img src="images/chb1.png" width="100%"></dt>
+                        <div class="chwords">Safe</div>
+                        <dd>SSL safe connection<br>
+                            Cold wallet technologies<br>
+                            Google Authenticator</dd>
+                    </dl>
+                </li>
+                <li style="border-bottom:1px solid #ddd; height:159px">
+                    <dl>
+                        <dt><img src="images/chb2.png" width="100%"></dt>
+                        <div class="chwords">Fast</div>
+                        <dd>Fast deposit<br>
+                            Instant withdraw</dd>
+                    </dl>
+                </li>
+                <li style="border-right:1px solid #ddd">
+                    <dl>
+                        <dt><img src="images/chb3.png" width="100%"></dt>
+                        <div class="chwords">Low fee</div>
+                        <dd>Low trading and withdraw fee</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="images/chb4.png" width="100%"></dt>
+                        <div class="chwords">Quick Support</div>
+                        <dd><br>
+                            Skype and Ticket<br>
+                            online customer services</dd>
+                    </dl>
+                </li>
+            </ul> 
+        </div>
+
+    </div>  
+
+    <table cellpadding="20" width="100%" cellspacing="20" border="0" align="center" style="background-color:#FFFFFF;">
+        <tr> 
+            <td colspan="5" style="background-color:#F1F3F5; height:40px;" align="center"> <h2>&nbsp;&nbsp;Videos </h2></td>
+        </tr>
+
+        <tr> 
+            <td> <iframe width="400" height="225" src="https://www.youtube.com/embed/Gc2en3nHxA4" frameborder="0" allowfullscreen></iframe></td>
+            <td width="30px">&nbsp;  </td>
+            <td> <iframe width="400" height="225" src="https://www.youtube.com/embed/VOVKowJkk2A" frameborder="0" allowfullscreen></iframe></td>
+            <td width="30px">&nbsp;  </td>
+            <td> <iframe width="400" height="225" src="https://www.youtube.com/embed/ktK6Yx3_czs" frameborder="0" allowfullscreen></iframe></td>
+
+        </tr>
+    </table> 
+</div>
+<div class="footer">
+ <div class="fkicon">
+ 
+
+    <table cellpadding="20" width="100%" cellspacing="20" border="0" align="center" style="background-color:#FFFFFF;">
+        <tr> 
+            <td> <img src="images/1.jpg" style="width:100px"></td>
+            <td><img src="images/2.png" style="width:100px"></td>
+            <td> <img src="images/3.png" style="width:100px"></td>
+            <td> <img src="images/4.png" style="width:100px"></td>
+            <td> <img src="images/5.png" style="width:100px"></td>
+
+        </tr>
+    </table>
+      </div>
+  <div class="fnav">
+    <div class="fnavcon">
+      <ul>
+        <li class="fnav_list">
+          <div class="fnav_title"> <b>Navigation</b> </div>
+          <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About us</a></li>
+            <li><a href="opportunity.php">Opportunity</a></li> 
+			<li><a href="soft/member/register.php" target="_blank">Create An Account</a></li>
+			<li><a href="soft/member/" target="_blank">Login</a></li>
+			<li><a href="contact.php">Contact us</a></li>
+             
+          </ul>
+        </li>
+         <li class="fnav_list">
+          <div class="fnav_title"> <b>News</b> </div>
+		  
+		   <div class="fxts">
+            <p><div class="widget-content" align="justify" style="background:rgba(255,255,255,0.3); border:solid #f9f9f9 1px; margin-top:30px;  max-width:200px;  height:160px; padding:5px; border-radius:5px;moz-border-radius:5px;webkit-border-radius:5px; margin-top:-10px;"> <p align="justify"> </p>
+			  	<p> 
+				<marquee direction="up" scrolldelay="100"  style="height:140px;"  scrollamount="3"  onmouseover="this.stop()" onMouseOut="this.start()">
+																						<p style="color:#000;">                                                                                                                                                        <p>Dear friends!</p>
+ </p>
+							</marquee></p>
+				
+				
+				</div></p>
+          </div>
+        </li>
+         <li class="fnav_list">
+          <div class="fnav_title"> <b>Achiever</b> </div>
+		  
+		   <div class="fxts">
+            <p><div class="widget-content" align="justify" style="background:rgba(255,255,255,0.3); border:solid #f9f9f9 1px; margin-top:30px;  max-width:200px;  height:160px; padding:5px; border-radius:5px;moz-border-radius:5px;webkit-border-radius:5px; margin-top:-10px;"> <p align="justify"> </p>
+			  	<p> 
+				<marquee direction="up" scrolldelay="100"  style="height:140px;"  scrollamount="3"  onmouseover="this.stop()" onMouseOut="this.start()">
+														</marquee></p>
+				
+				
+				</div></p>
+          </div>
+        </li>
+                <li class="fnav_list fxtishi">
+          <div class="fnav_title"><b>Notice</b> </div>
+          <div class="fxts">
+            <p>Please Be Aware of The High Risks In The Crypto-Currency Trading Markets Due To The Price Fluctuation And Other Factors.</p>
+          </div>
+         
+		 <!-- <img src="./images/logo_en.png" style="float:right">-->
+		 <img src="images/logo_en.png" style="float:right"> </li>
+      </ul>
+	  	       </div>
+    <div class="tail">
+	<table width="990"><tr><td  width="20%" style="text-align:left;"> 
+	<!--<iframe src="btc-quote.php" width="238" scrolling="no" style="border:0px; margin-left:-210px; margin-top:-10px;" height="78"></iframe>-->
+	
+
+          
+</td><td  width="90%">
+<div style="ma" sty>
+
+          <span><a href="#">thecryptomarkets.eu </a>Copyright &copy; 2017&nbsp; Powered By <a href="#">Bitcoin & Crypto Currency Exchange Platform</a> </span> 
+		   
+		   	   </div>
+		 </td><td  width="20%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		 </div>
+		 </td></tr></table>  
+		   
+		   </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".side-sev ul li").hover(function(){
+		$(this).find(".sidebox").stop().animate({"width":"200px"},2).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#009173"})	
+	},function(){
+		$(this).find(".sidebox").stop().animate({"width":"54px"},2).css({"opacity":"0.6","filter":"Alpha(opacity=60)","background":"#666"})	
+	});
+	
+	
+});
+
+</script>
+
+   <div class="side-sev">
+  <ul>
+    <li><a href="mailto:info@thecryptomarkets.eu" target="_blank">
+      <div class="sidebox"><img src="images/side_icon06.png"><span><b>E-mail</b><br>
+        info@thecryptomarkets.eu</span></div>
+      </a></li>
+    <li><a href="Tel:9090909090">
+      <div class="sidebox"><img src="images/side_icon01.png"><span><b>Phone</b><br>
+         9090909090</span></div>
+      </a></li>
+    <li><a href="contact.php" target="_blank">
+      <div class="sidebox"><img src="images/side_icon02.png"><span><b>Contact Us</b><br>
+        Submit a request</span></div>
+      </a></li>
+    <li><a target="_blank">
+      <div class="sidebox"><img src="images/side_icon08.png"><b>Tweets</b></div>
+      </a></li>
+    <li><a href="https://www.facebook.com/HEXA-Crypto-236516636809250/" target="_blank">
+      <div class="sidebox"><img src="images/side_icon09.png"><b>Facebook</b></div>
+      </a></li>
+  </ul>
+</div>
+<script type="text/javascript" src="js/backtotop_en.js"></script>
+<div class="backToTop" title="^" style="display: none;">^</div>
+<script type="text/javascript" src="js/counter.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".side-sev ul li").hover(function(){
+		$(this).find(".sidebox").stop().animate({"width":"200px"},2).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#009173"})	
+	},function(){
+		$(this).find(".sidebox").stop().animate({"width":"54px"},2).css({"opacity":"0.6","filter":"Alpha(opacity=60)","background":"#666"})	
+	});
+	
+	
+});
+
+</script> 
+</body>
+</html>    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <style>
+        .ui-dialog{
+            z-index: 9999;
+        }
+        .ui-dialog{
+            left: 380px !important;
+        }
+    </style>
+    <div id="dialog" title=""><img src="soft/uploads/59c6019eb2ab9.jpg" width="100%" /></div>    <script>
+          $(function() {
+            $( "#dialog" ).dialog();
+
+            $( "#dialog" ).dialog({ minWidth: 650 });
+            // getter
+            var minWidth = $( ".selector" ).dialog( "option", "minWidth" );
+            // setter
+            $( ".selector" ).dialog( "option", "minWidth", 650 );
+          });
+    </script>
